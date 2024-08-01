@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: black;
+}
+
+.icon {
+  width: 150px;
+}
+
+.UlHeader {
+  display: flex;
+  list-style: none;
+  margin: 20px;
+}
+
+.liHeader {
+  padding: 10px 0;
+  margin: 20px;
+  font-size: 25px;
+}
+
+
+
+.liHeader.active {
+  border-bottom: 2px solid #000;
+}
+
+.liHeader a {
+  text-decoration: none;
+  color: inherit;
+}
+@media only screen and (max-width: 767px) {
+
+  .UlHeader {
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .liHeader {
+    margin: 10px 10px;
+    font-size: 20px;
+  }
+
+
+
+}

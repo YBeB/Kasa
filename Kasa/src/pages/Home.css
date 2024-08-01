@@ -1,0 +1,300 @@
+
+.home {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .home {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+.DivFirstImage {
+  display: flex;
+  justify-content: center;
+}
+
+
+.firstImage {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .firstImage {
+    height: auto;
+  }
+}
+
+
+h1 {
+  color: #ff8888;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+
+.host-picture {
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+.pictures img {
+  width: 200px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .pictures img {
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+
+.location {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .location {
+    font-size: 16px;
+  }
+}
+
+
+.TagUl {
+  color: white;
+  display: flex;
+  list-style: none;
+}
+
+.TagLi {
+  margin-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .TagLi {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+
+
+.MiddleLowPart, .MiddlePart {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.HostProfil {
+  display: flex;
+  align-items: center;
+}
+
+
+.DropDown {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 767px) {
+  .DropDown {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .DropDownMenu {
+    margin-top: 50px;
+  }
+}
+
+.DropDownMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #ff6060;
+  border: none;
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+}
+
+.dropdown-content.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.Dropdown-cont {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.flex-b {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 2000px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-container {
+    height: auto;
+  }
+}
+
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  object-fit: fill;
+}
+
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button:disabled {
+  cursor: not-allowed;
+}
+
+
+.carousel-counter {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-counter {
+    font-size: 16px;
+  }
+}
+
+
+.host-surname,
+.host-name {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .host-surname,
+  .host-name {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+
+
+.TagRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars {
+  display: flex;
+}
+
+
+.HostandRating {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .HostandRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.PrincipalContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .PrincipalContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

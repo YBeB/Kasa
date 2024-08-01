@@ -1,0 +1,33 @@
+.DropDownMenuAbout{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ff6060;
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 350px;
+    border-radius: 10px;
+  margin-top: 20px;
+  }
+  .DropDownAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+.dropdown-content-a{
+
+  background-color: grey;
+  width: 350px;
+}
+@media only screen and (max-width: 767px) {
+  .DropDownMenuAbout {
+    width: 320px;
+      font-size: 24px;
+      padding: 10px;
+  }
+
+
+}
