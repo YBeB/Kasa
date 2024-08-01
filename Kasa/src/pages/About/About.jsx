@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import backGroundImageAbout from "../assets/backgroundAbout.jpg"
+import backGroundImageAbout from "../../assets/backgroundAbout.jpg"
 import "./About.css";
 
 

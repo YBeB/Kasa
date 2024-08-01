@@ -1,6 +1,6 @@
 
-import backgroundImage from '../assets/backgroundImageHomepage.jpg';
-import DataDisplay from '../components/DisplayData';
+import backgroundImage from '../../assets/backgroundImageHomepage.jpg';
+import DataDisplay from '../../components/DisplayData';
 import "./Homepage.css";
 
 function Homepage(){

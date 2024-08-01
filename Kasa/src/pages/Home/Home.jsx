@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./Home.css";
-import filledStar from "../assets/stars.svg";
-import emptyStar from "../assets/greystars.svg";
-import arrowLeft from "../assets/arrowleft.svg";
-import arrowRight from "../assets/arrowright.svg";
+import filledStar from "../../assets/stars.svg";
+import emptyStar from "../../assets/greystars.svg";
+import arrowLeft from "../../assets/arrowleft.svg";
+import arrowRight from "../../assets/arrowright.svg";
 function Home() {
   const { id } = useParams();
   const navigate = useNavigate();
