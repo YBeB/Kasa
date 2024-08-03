@@ -1,16 +1,7 @@
-
 .home {
   padding-left: 50px;
   padding-right: 50px;
 }
-
-@media only screen and (max-width: 767px) {
-  .home {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 
 .DivFirstImage {
   display: flex;
@@ -25,24 +16,12 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 767px) {
-  .firstImage {
-    height: auto;
-  }
-}
-
 
 h1 {
   color: #ff8888;
   font-weight: 400;
   font-size: 40px;
   margin-bottom: 2px;
-}
-
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 30px;
-  }
 }
 
 
@@ -57,12 +36,6 @@ h1 {
   margin: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  .pictures img {
-    width: 100px;
-    margin: 5px;
-  }
-}
 
 
 .location {
@@ -71,11 +44,7 @@ h1 {
   margin-top: 0px;
 }
 
-@media only screen and (max-width: 767px) {
-  .location {
-    font-size: 16px;
-  }
-}
+
 
 
 .TagUl {
@@ -95,15 +64,9 @@ h1 {
   align-items: center;
 }
 
-@media only screen and (max-width: 767px) {
-  .TagLi {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-}
 
-
-.MiddleLowPart, .MiddlePart {
+.MiddleLowPart,
+.MiddlePart {
   display: flex;
   flex-direction: column;
 }
@@ -120,26 +83,17 @@ h1 {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 767px) {
-  .DropDown {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .DropDownMenu {
-    margin-top: 50px;
-  }
-}
 
 .DropDownMenu {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   background-color: #ff6060;
   border: none;
   color: white;
   font-size: 30px;
-  width: 350px;
+  width: 650px;
+
   border-radius: 10px;
 }
 
@@ -149,7 +103,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 350px;
+  width: 650px;
 }
 
 .dropdown-content.show {
@@ -160,6 +114,7 @@ h1 {
 .Dropdown-cont {
   padding: 0px;
   margin: 0px;
+width: 100%;
 }
 
 
@@ -180,11 +135,7 @@ h1 {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel-container {
-    height: auto;
-  }
-}
+
 
 
 .carousel {
@@ -236,11 +187,7 @@ h1 {
   font-size: 22px;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel-counter {
-    font-size: 16px;
-  }
-}
+
 
 
 .host-surname,
@@ -252,13 +199,6 @@ h1 {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  .host-surname,
-  .host-name {
-    font-size: 16px;
-    margin-right: 5px;
-  }
-}
 
 
 .TagRating {
@@ -276,14 +216,7 @@ h1 {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 767px) {
-  .HostandRating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+
 
 
 .PrincipalContent {
@@ -291,10 +224,115 @@ h1 {
   justify-content: space-between;
 }
 
+
+li {
+  list-style-type: none;
+
+}
 @media only screen and (max-width: 767px) {
+
+  .location {
+    font-size: 16px;
+  }
+
+  .firstImage {
+    height: auto;
+  }
+
+  .DropDown {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .DropDownMenu {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .dropdown-content {
+
+    width: 100%;
+  }
+  .carousel-container {
+    height: auto;
+  }
+
+  .host-surname,
+  .host-name {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .carousel-counter {
+    font-size: 16px;
+  }
+
+  .HostandRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .PrincipalContent {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+
+  .TagLi {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .home {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .pictures img {
+    width: 100px;
+    margin: 5px;
+  }
 }
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .DropDownMenu {
+    margin: 50px 0px 0px 0px;
+
+    width: 350px;
+  }
+  .dropdown-content {
+
+    width: 350px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .DropDownMenu {
+    margin: 50px 0px 0px 0px;
+
+    width: 350px;
+  }
+  .dropdown-content {
+
+    width: 350px;
+  }
+}
+
+/* Écrans larges */
+@media (min-width: 1200px) {
+
+}
+

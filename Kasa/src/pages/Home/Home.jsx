@@ -5,6 +5,9 @@ import filledStar from "../../assets/stars.svg";
 import emptyStar from "../../assets/greystars.svg";
 import arrowLeft from "../../assets/arrowleft.svg";
 import arrowRight from "../../assets/arrowright.svg";
+import arrowUp from '../../assets/arrowup.svg'
+import arrowDown from '../../assets/arrowdown.svg'
+
 function Home() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -134,9 +137,13 @@ function Home() {
       <div className="DropDown">
         <div className="flex-b">
           <p className="Dropdown-cont">
-            <button className="DropDownMenu" onClick={toggleDescription}>
-              {descriptionOpen ? `Description ` : "Description"}
-            </button>
+          <button className="DropDownMenu" onClick={toggleDescription}>
+        {descriptionOpen ? `Description ` : "Description"}
+        <img
+          src={descriptionOpen ? arrowUp : arrowDown}
+          alt={descriptionOpen ? "Flèche vers le haut" : "Flèche vers le bas"}
+        />
+      </button>
           </p>
           {descriptionOpen && (
             <div className="dropdown-content">
@@ -146,9 +153,13 @@ function Home() {
         </div>
         <div className="flex-b">
           <p className="Dropdown-cont">
-            <button className="DropDownMenu" onClick={toggleEquipments}>
-              {equipmentsOpen ? "Equipments" : "Equipments"}
-            </button>
+          <button className="DropDownMenu" onClick={toggleEquipments}>
+        {equipmentsOpen ? "Equipments" : "Equipments"}
+        <img
+          src={equipmentsOpen ? arrowUp : arrowDown}
+          alt={equipmentsOpen ? "Flèche vers le haut" : "Flèche vers le bas"}
+        />
+      </button>
           </p>
           {equipmentsOpen && (
             <div className="dropdown-content">
