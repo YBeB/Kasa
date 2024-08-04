@@ -4,7 +4,7 @@ import "./Footer.css"
 
 
 
-
+//Affichage du footer 
 function Footer(){
     return(
     

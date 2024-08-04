@@ -8,7 +8,7 @@
     height: 210px;
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     border-radius: 30px;
     object-fit: cover;
     filter: brightness(50%);
@@ -17,9 +17,11 @@
   
   .HeaderTitle {
     position: absolute;
-    margin: 75px;
+    margin: 120px;
     font-size: 50px;
     color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 2px black;
   }
   
   .DivBody {
@@ -33,7 +35,7 @@
     width: 90vw;
     background-color: #f6f6f6;
     border-radius: 30px;
-    padding: 80px;
+    padding: 70px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -48,7 +50,7 @@
     }
   
     .HeaderTitle {
-      margin: 50px;
+      margin-top: 20%;
       font-size: 30px;
     }
   
@@ -70,8 +72,9 @@
     }
   
     .HeaderTitle {
-      margin: 25px;
-      font-size: 20px;
+
+      font-size: 30px;
+      text-align: center;
     }
   
     .DivInsideBody {

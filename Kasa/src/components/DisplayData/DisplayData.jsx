@@ -4,10 +4,11 @@ import Card from '../Card/Card';
 import './DataDisplay.css';
 
 const DataDisplay = () => {
+  // Hooks créer pour le fetch
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+// Hooks pour effects secondaire
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -16,6 +17,7 @@ const DataDisplay = () => {
           throw new Error('Pas de réponse');
         }
         const jsonData = await response.json();
+        //Stockage de l'états dans notre UseState data
         setData(jsonData);
       } catch (error) {
         setError(error);
@@ -29,7 +31,7 @@ const DataDisplay = () => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
-
+//Affichage d'une div qui display les cartes disponibles et les map
   return (
     <div>
 

@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
   const location = useLocation();
-
+//Affichage du Header
   return (
     <header>
       <img src={icon} alt="icon" className="icon" />

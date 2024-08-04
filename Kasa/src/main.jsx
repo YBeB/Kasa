@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home.jsx";
 import "./index.css";
 import NotFound from "./pages/NotFound/NotFound.jsx";
 import About from "./pages/About/About.jsx";
-
+//Création des route et placement des header et du footer
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>

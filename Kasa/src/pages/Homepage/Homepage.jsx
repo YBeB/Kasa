@@ -4,7 +4,7 @@ import DataDisplay from '../../components/DisplayData/DisplayData';
 import "./Homepage.css";
 
 function Homepage(){
-
+// Affichage de tout les cards via differents components type Card et DataDisplay
 return(
     <body>
    < div className='DivInsideImage'>

@@ -11,7 +11,7 @@ const Card = ({ id , image, title }) => {
     </div>
   );
 };
-
+//Proptype qui neccesite une chaine de caracte pour l'id , l'image et le titre
 Card.propTypes = {
   id: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
