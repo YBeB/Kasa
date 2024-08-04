@@ -3,7 +3,7 @@ import backGroundImageAbout from "../../assets/backgroundAbout.jpg";
 //Importation du composant DropDown
 import DropDown from "../../components/DropDown/DropDown";
 import "./About.css";
-//Afficha du Dropdown menu
+//Affichage du Dropdown menu
 function About() {
   return (
     <div className="about-content">
