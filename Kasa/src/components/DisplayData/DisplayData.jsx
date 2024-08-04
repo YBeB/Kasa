@@ -1,6 +1,6 @@
 
 import{ useEffect, useState } from 'react';
-import Card from './Card';
+import Card from '../Card/Card';
 import './DataDisplay.css';
 
 const DataDisplay = () => {

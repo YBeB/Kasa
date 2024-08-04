@@ -1,5 +1,5 @@
 
-import iconFooter from "../assets/icon-footer.svg"
+import iconFooter from "../../assets/icon-footer.svg"
 import "./Footer.css"
 
 

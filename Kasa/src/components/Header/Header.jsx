@@ -1,7 +1,7 @@
 
 import { Link, useLocation } from 'react-router-dom';
-import icon from '../assets/logo.svg';
-import './Header.css'; // Link the CSS file
+import icon from '../../assets/logo.svg';
+import './Header.css'; 
 
 function Header() {
   const location = useLocation();
