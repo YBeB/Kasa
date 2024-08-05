@@ -22,35 +22,3 @@
     margin-top: 20px;
   }
   
-  .dropdown-content {
-    background-color: #f0f0f0;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-  
-  .about-dropdown {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #ff6060;
-    border: none;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  @media only screen and (max-width: 767px)
-{
-.DropDownMenu {
-    margin-top: 50px;
-    width: 345px;
-}
-.dropdown-content{
-width: 330px;
-
-
-}
-}

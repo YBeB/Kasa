@@ -1,13 +1,11 @@
 .home {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 
 .DivFirstImage {
   display: flex;
   justify-content: center;
 }
-
 
 .firstImage {
   height: 500px;
@@ -16,52 +14,38 @@
   object-fit: cover;
 }
 
-
 h1 {
   color: #FF6060;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 36px;
   margin-bottom: 2px;
-  font-weight: 500;
 }
-
 
 .host-picture {
   width: 100px;
   border-radius: 50%;
 }
 
-
 .pictures img {
   width: 200px;
   margin: 10px;
 }
 
-
-
 .location {
   font-size: 18px;
   font-weight: 500;
-  margin-top: 0px;
+  margin-top: 0;
 }
-
-
-
 
 .TagUl {
   color: white;
   display: flex;
   list-style: none;
-
 }
 
 .TagLi {
-  margin-right:15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
+  margin-right: 15px;
+  padding: 5px 10px;
   font-size: 14px;
   border-radius: 10px;
   background-color: #ff6060;
@@ -70,29 +54,25 @@ h1 {
   font-weight: 700;
 }
 
-
 .MiddleLowPart,
 .MiddlePart {
   display: flex;
   flex-direction: column;
 }
 
-
 .HostProfil {
   display: flex;
   align-items: center;
 }
 
-
-.DropDown {
+.DropDown,
+.DropDownMenu,
+.dropdown-content {
   display: flex;
   justify-content: space-between;
 }
 
-
 .DropDownMenu {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: #ff6060;
@@ -100,7 +80,7 @@ h1 {
   color: white;
   font-size: 18px;
   width: 650px;
-font-weight: 700;
+  font-weight: 700;
   border-radius: 10px;
   font-family: 'Montserrat';
 }
@@ -108,10 +88,11 @@ font-weight: 700;
 .dropdown-content {
   background-color: #f0f0f0;
   padding: 10px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 650px;
+  max-height: 500px;
+  opacity: 1;
 }
 
 .dropdown-content.show {
@@ -119,18 +100,12 @@ font-weight: 700;
   opacity: 1;
 }
 
-.Dropdown-cont {
-  padding: 0px;
-  margin: 0px;
-width: 100%;
-}
-
-
+.Dropdown-cont,
 .flex-b {
-  display: flex;
-  flex-direction: column;
-}
+  padding: 0;
+  margin: 0;
 
+}
 
 .carousel-container {
   width: 100%;
@@ -143,9 +118,6 @@ width: 100%;
   border-radius: 10px;
 }
 
-
-
-
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -157,7 +129,6 @@ width: 100%;
   min-width: 100%;
   object-fit: fill;
 }
-
 
 .carousel-buttons {
   position: absolute;
@@ -180,14 +151,11 @@ width: 100%;
   cursor: not-allowed;
 }
 
-
 .carousel-counter {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  bottom: 0px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   text-align: center;
   color: white;
   padding: 5px 10px;
@@ -195,19 +163,14 @@ width: 100%;
   font-size: 22px;
 }
 
-
-
-
 .host-surname,
 .host-name {
   color: #ff6060;
   font-weight: 500;
   font-size: 21px;
-  margin: 0px;
+  margin: 0;
   margin-right: 10px;
 }
-
-
 
 .TagRating {
   display: flex;
@@ -219,30 +182,25 @@ width: 100%;
   width: 50px;
 }
 
-
 .HostandRating {
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 .PrincipalContent {
   display: flex;
   justify-content: space-between;
 }
 
-
 li {
   list-style-type: none;
-
 }
+
 @media only screen and (max-width: 767px) {
   .carousel-buttons img {
-width: 50px;
+    width: 50px;
   }
-  
+
   .location {
     font-size: 16px;
   }
@@ -256,14 +214,14 @@ width: 50px;
     margin-top: 40px;
   }
 
-  .DropDownMenu {
-    margin-top: 50px;
-    width: 350px;
-  }
+
   .dropdown-content {
 
     width: 350px;
   }
+  .DropDownMenu{margin-top: 30px;}
+
+
   .carousel-container {
     height: auto;
   }
@@ -279,26 +237,24 @@ width: 50px;
   }
 
   .HostandRating {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
 
   .PrincipalContent {
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
 
   .TagLi {
-    font-size: 16px;
+    font-size: 12px;
     margin-right: 10px;
+    padding-right: 5px;
   }
 
   .home {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h1 {
@@ -309,52 +265,42 @@ width: 50px;
     width: 100px;
     margin: 5px;
   }
+
+  .DropDownMenu,
+  .dropdown-content {
+    width: 345px;
+  }
 }
-
-
-
-
-
-
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .DropDownMenu {
-    margin: 50px 0px 0px 0px;
-
-    width: 350px;
-  }
+  .DropDownMenu,
   .dropdown-content {
-
     width: 350px;
   }
-
 }
-
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-  .DropDownMenu {
-    margin: 50px 0px 0px 0px;
-
-    width: 350px;
-  }
+  .DropDownMenu,
   .dropdown-content {
-
     width: 350px;
   }
 }
 
-
-
-@media (min-width: 1199px) and (max-width: 1418px) {
-  .DropDownMenu {
-    margin: 50px 0px 0px 0px;
-
-    width: 450px;
-  }
+@media (min-width: 1200px) and (max-width: 1418px) {
+  .DropDownMenu,
   .dropdown-content {
-
     width: 450px;
   }
 }
 
+.about-dropdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ff6060;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
