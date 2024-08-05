@@ -4,10 +4,12 @@ header {
   align-items: center;
   padding: 10px 20px;
   color: black;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .icon {
-  width: 150px;
+  width: 210px;
 }
 
 .UlHeader {
@@ -33,7 +35,10 @@ header {
   color: inherit;
 }
 @media only screen and (max-width: 767px) {
-
+  .icon {
+    width: 145px;
+  }
+  
   .UlHeader {
 
     width: 100%;

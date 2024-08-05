@@ -18,10 +18,11 @@
 
 
 h1 {
-  color: #ff8888;
+  color: #FF6060;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 2px;
+  font-weight: 500;
 }
 
 
@@ -39,7 +40,7 @@ h1 {
 
 
 .location {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-top: 0px;
 }
@@ -55,13 +56,17 @@ h1 {
 
 .TagLi {
   margin-right: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-size: 14px;
   border-radius: 10px;
   background-color: #ff6060;
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 
 
@@ -80,21 +85,23 @@ h1 {
 
 .DropDown {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
 .DropDownMenu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background-color: #ff6060;
   border: none;
   color: white;
-  font-size: 30px;
+  font-size: 18px;
   width: 650px;
-
+font-weight: 700;
   border-radius: 10px;
+  font-family: 'Montserrat';
 }
 
 .dropdown-content {
@@ -208,6 +215,7 @@ width: 100%;
 
 .stars {
   display: flex;
+  width: 50px;
 }
 
 
@@ -331,7 +339,17 @@ li {
   }
 }
 
-/* Écrans larges */
-@media (min-width: 1200px) {
 
+
+@media (min-width: 1199px) and (max-width: 1418px) {
+  .DropDownMenu {
+    margin: 50px 0px 0px 0px;
+
+    width: 450px;
+  }
+  .dropdown-content {
+
+    width: 450px;
+  }
 }
+
