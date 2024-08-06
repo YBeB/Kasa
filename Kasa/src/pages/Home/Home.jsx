@@ -46,6 +46,7 @@ function Home() {
   if (!data) return null;
 //Affichage de tout les components créer et importé 
   return (
+
     <div className="home">
       <Carousel pictures={data.pictures} />
       <div className="PrincipalContent">
@@ -81,6 +82,7 @@ function Home() {
         />
       </div>
     </div>
+
   );
 }
 

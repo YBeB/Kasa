@@ -6,7 +6,7 @@ import "./Homepage.css";
 function Homepage(){
 // Affichage de tout les cards via differents components type Card et DataDisplay
 return(
-    <body>
+    <div>
    < div className='DivInsideImage'>
 
 <img className='BackgroundImageStyled' src={backgroundImage}></img>
@@ -17,7 +17,7 @@ return(
 <DataDisplay/>
 </div>
 </div>
-</body>
+</div>
 )
 
 }
