@@ -384,6 +384,18 @@ li {
     max-width: 100%;
   }
 }
+@media (min-width: 1420px) and (max-width: 1440px) {
+
+  .DropDownMenu {
+    width: 650px;
+    max-width: 100%;
+  }
+
+  .dropdown-content {
+    width: 650px;
+    max-width: 100%;
+  }
+}
 
 .about-dropdown {
   display: flex;
