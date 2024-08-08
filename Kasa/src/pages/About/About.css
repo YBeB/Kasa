@@ -20,3 +20,106 @@
     margin-top: 20px;
   }
 
+  .DropDownAbout button{
+    width: 1090px;
+
+
+  }
+  .DropDownAbout .dropdown-content{
+    width: 1070px;
+
+
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .DropDownAbout button{
+      width: 350px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 330px;
+  
+
+  }}
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .DropDownAbout button{
+      width: 650px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 630px;
+  
+  }}
+  
+  @media (min-width: 1024px) and (max-width: 1199px) {
+  
+    .DropDownAbout button{
+      width: 850px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 830px;
+  
+  }}
+  
+  @media (min-width: 1200px) and (max-width: 1418px) {
+
+    .DropDownAbout button{
+      width: 450px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 430px;
+  
+  }}
+  
+  @media only screen and (max-width: 320px) {
+    .DropDownAbout button{
+      width: 320px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 290px;
+  
+  }
+}
+  @media (min-width:320px) and (max-width: 425px) {
+  
+  
+    .carousel-button img {
+      width: 50px;
+    }
+  
+  }
+  
+  @media (min-width: 425px) and (max-width: 767px) {
+    .DropDownAbout button{
+      width: 400px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 380px;
+  
+  }}
+  @media (min-width: 1420px) and (max-width: 1440px) {
+  
+    .DropDownAbout button{
+      width: 950px;
+  
+  
+    }
+    .DropDownAbout .dropdown-content{
+      width: 930px;
+  
+  }
+  
+}
