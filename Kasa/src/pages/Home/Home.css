@@ -397,14 +397,3 @@ li {
   }
 }
 
-.about-dropdown {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #ff6060;
-  border: none;
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-}
