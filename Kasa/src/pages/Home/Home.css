@@ -200,7 +200,7 @@ li {
 @media only screen and (max-width: 767px) {
   .carousel-container {
     height: 300px;
-    /* Ajustez la hauteur pour les petits écrans */
+
   }
 
   .carousel img {
@@ -282,36 +282,44 @@ li {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .carousel-container {
     height: 500px;
-    /* Ajustez la hauteur pour les écrans moyens */
+    
   }
 
   .carousel img {
     height: 500px;
   }
 
-  .DropDownMenu,
-  .dropdown-content {
+  .DropDownMenu {
+margin-left: 5px;
     width: 350px;
+  }
+  .dropdown-content {
+    width: 330px;
+    margin-left: 5px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1199px) {
+@media (min-width: 1020px) and (max-width: 1199px) {
 
-  .DropDownMenu,
-  .dropdown-content {
-    width: 350px;
+  .DropDownMenu 
+   {
+    width: 460px;
+    max-width: 100%;
+  }
+  .dropdown-content{
+    width: 450px;
+
+
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1418px) {
   .carousel-container {
     height: 600px;
-    /* Ajustez la hauteur pour les grands écrans */
   }
-
   .carousel img {
     height: 600px;
   }
@@ -325,7 +333,7 @@ li {
 @media only screen and (max-width: 320px) {
   .carousel-container {
     height: 250px;
-    /* Ajustez la hauteur pour les très petits écrans */
+
   }
 
   .carousel img {
@@ -374,15 +382,12 @@ li {
     height: 350px;
   }
 
-  .DropDownMenu {
+  .DropDownMenu .dropdown-content {
     width: 767px;
     max-width: 100%;
   }
 
-  .dropdown-content {
-    width: 400px;
-    max-width: 100%;
-  }
+
 }
 @media (min-width: 1420px) and (max-width: 1440px) {
 
@@ -392,7 +397,7 @@ li {
   }
 
   .dropdown-content {
-    width: 650px;
+    width: 630px;
     max-width: 100%;
   }
 }
