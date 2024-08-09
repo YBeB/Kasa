@@ -22,22 +22,15 @@ font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {
-    .error404{
-        font-size: 96px;
+    .error404 {
+        font-size: 72px;
         font-weight: 700;
-        
-        }
-        .message-error{
-            color:#ff828a;
-        font-size:
-        18px ;
-        font-weight: 500;
+    }
+    .message-error {
+        font-size: 16px;
         text-align: center;
-        }
-        .return-home{
-        font-size:14px ;
-        text-decoration: underline;
-        font-weight: 500;
-        }
-        
-  }
+    }
+    .return-home {
+        font-size: 12px;
+    }
+}

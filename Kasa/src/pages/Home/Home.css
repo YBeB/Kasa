@@ -41,6 +41,7 @@ h1 {
   color: white;
   display: flex;
   list-style: none;
+  padding-left:5px;
 }
 
 .TagLi {
@@ -159,7 +160,7 @@ h1 {
   text-align: center;
   color: white;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 25px;
   font-size: 22px;
 }
 
@@ -197,7 +198,25 @@ li {
 }
 
 /* Media Queries */
+
+
+
+
 @media only screen and (max-width: 767px) {
+  
+  .home{
+    margin:5px;
+    padding: 5px;
+    }
+  .star {
+    width: 20px;
+    margin-top: 15px;
+}
+.flex-b{
+margin-bottom: 20px;
+
+}
+
   .carousel-container {
     height: 300px;
 
@@ -217,16 +236,24 @@ li {
   }
 
   .DropDown {
+    display: flex;
+align-items: center;
     flex-direction: column;
+
     margin-top: 40px;
   }
 
   .dropdown-content {
     width: 350px;
+    font-size: 14px;
   }
 
   .DropDownMenu {
-    margin-top: 30px;
+    margin-top: 0px;
+    font-size: 14px;
+    border-radius: 5px;
+    
+  
   }
 
   .carousel-container {
@@ -282,7 +309,7 @@ li {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .carousel-container {
     height: 500px;
     
@@ -296,10 +323,19 @@ li {
 margin-left: 5px;
     width: 350px;
   }
+
   .dropdown-content {
     width: 330px;
-    margin-left: 5px;
+    max-width: 100%;
+    margin: 0px;
+    padding-right: 0px;
   }
+  .dropdown-content p{
+    margin: 10px;
+    padding-right: 10px;
+
+  }
+  
 }
 
 @media (min-width: 1020px) and (max-width: 1199px) {
@@ -331,6 +367,11 @@ margin-left: 5px;
 }
 
 @media only screen and (max-width: 320px) {
+  .home{
+    padding: 10px;
+
+  }
+
   .carousel-container {
     height: 250px;
 
@@ -345,24 +386,35 @@ margin-left: 5px;
   }
 
   .host-picture {
-    width: 80px;
+    width: 70px;
     border-radius: 50%;
   }
 
   .DropDownMenu {
     width: 310px;
     max-width: 100%;
+   
   }
 
   .dropdown-content {
     width: 300px;
     max-width: 100%;
+    margin: 0px;
+    padding-right: 0px;
+  }
+  .dropdown-content p{
+    margin: 10px;
+    padding-right: 10px;
+
   }
 }
 
 @media (min-width:320px) and (max-width: 425px) {
 
-
+  .host-picture {
+    width: 70px;
+    border-radius: 50%;
+  }
   .carousel-button img {
     width: 50px;
   }
@@ -385,8 +437,11 @@ margin-left: 5px;
   .DropDownMenu .dropdown-content {
     width: 767px;
     max-width: 100%;
-  }
 
+  }
+.host-picture{
+  width: 70px;
+}
 
 }
 @media (min-width: 1420px) and (max-width: 1440px) {
